@@ -1,0 +1,120 @@
+<!--meta {"title":"【実習】メニュー｜豊史製麺","desc":"豊史製麺のメニュー。ひと晩寝かせた熟成うどん、天ぷら、ご飯もの、うどん弁当の価格と内容をご案内します。","nav":"menu","crumb":"メニュー"} -->
+<!-- ============ ページの見出し ============ -->
+<section class="page-hero">
+  <img class="page-hero__img" src="img/hero-menu.svg" alt="">
+  <h1 class="page-hero__title">お品書き<small>メニュー</small></h1>
+</section>
+
+<p class="page-lead reveal">きのう仕込んで、<br>ひと晩寝かせた麺を、<br>今日、茹でたてで。<br>豊史製麺のお品書きです。</p>
+
+<nav class="anchor-nav" aria-label="メニューの種類">
+  <a href="#pickup">限定</a><a href="#udon">うどん</a><a href="#tempura">天ぷら</a><a href="#gohan">ご飯もの</a><a href="#bento">うどん弁当</a><a href="#yakumi">薬味</a>
+</nav>
+
+<!-- ============ 限定 ============ -->
+<section class="sec sec--pickup" id="pickup">
+  <h2 class="sec__title"><span>おすすめ・</span><span>限定メニュー</span></h2>
+  <div class="sec__body">
+    <div class="noren" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="slider" data-slider>
+      <ul class="slider__track pickup-list">
+        <li class="pickup reveal"><a href="#udon">
+          <div class="poster"><img src="img/niku.svg" alt="" loading="lazy"><span class="poster__badge">新作</span><strong class="poster__name">肉玉<br>熟成うどん</strong><span class="poster__band">期間限定販売　<b>11月下旬</b>まで</span></div>
+          <p>並 690円　大 820円</p></a></li>
+        <li class="pickup reveal"><a href="#udon">
+          <div class="poster"><img src="img/kamo.svg" alt="" loading="lazy"><span class="poster__badge poster__badge--gold">秋冬</span><strong class="poster__name">鴨ねぎ<br>南蛮うどん</strong><span class="poster__band">期間限定販売　<b>1月中旬</b>まで</span></div>
+          <p>並 790円　大 920円</p></a></li>
+        <li class="pickup reveal"><a href="#udon">
+          <div class="poster"><img src="img/curry.svg" alt="" loading="lazy"><span class="poster__badge">感謝祭</span><strong class="poster__name">ふた晩<br>うどん</strong><span class="poster__band">11月21日から　<b>数量限定</b></span></div>
+          <p>熟成時間を倍にした、感謝祭だけの麺</p></a></li>
+        <li class="pickup reveal"><a href="#bento">
+          <div class="poster"><img src="img/bento.svg" alt="" loading="lazy"><span class="poster__badge poster__badge--gold">持ち帰り</span><strong class="poster__name">熟成<br>うどん弁当</strong><span class="poster__band">お手頃　<b>390円</b>から</span></div>
+          <p>熟成うどんを、いつでもどこでも</p></a></li>
+      </ul>
+      <button class="slider__btn slider__btn--prev" type="button" aria-label="前へ"><svg><use href="#ic-chev"/></svg></button>
+      <button class="slider__btn slider__btn--next" type="button" aria-label="次へ"><svg><use href="#ic-chev"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ うどん ============ -->
+<section class="cat" id="udon">
+  <div class="cat__head">
+    <div class="cat__img reveal"><img src="img/kamaage.svg" alt="木桶に入った釜揚げうどんのイラスト" loading="lazy"></div>
+    <div class="cat__card reveal">
+      <h2 class="cat__title">うどん</h2>
+      <p class="cat__text">生地をひと晩、<br>十二度の熟成庫で。<br>もっちりとした弾力と<br>小麦の甘みが生まれます。</p>
+    </div>
+  </div>
+  <ul class="item-grid">{{part:menu:udon}}
+  </ul>
+  <p class="size-note">並＝1玉、大＝1.5玉、得＝2玉。麺の量は、注文時に「やわらかめ」「かため」もお選びいただけます。</p>
+</section>
+
+<!-- ============ 天ぷら ============ -->
+<section class="cat cat--rev" id="tempura">
+  <div class="cat__head">
+    <div class="cat__img reveal"><img src="img/tempura.svg" alt="天ぷら盛り合わせのイラスト" loading="lazy"></div>
+    <div class="cat__card reveal">
+      <h2 class="cat__title">天ぷら</h2>
+      <p class="cat__text">揚げたてを、<br>カウンターから<br>お好きなだけ。<br>うどんの相棒です。</p>
+    </div>
+  </div>
+  <ul class="item-grid item-grid--3">{{part:menu:tempura}}
+  </ul>
+</section>
+
+<!-- ============ ご飯もの ============ -->
+<section class="cat" id="gohan">
+  <div class="cat__head">
+    <div class="cat__img reveal"><img src="img/gohan.svg" alt="おむすびのイラスト" loading="lazy"></div>
+    <div class="cat__card reveal">
+      <h2 class="cat__title">ご飯もの</h2>
+      <p class="cat__text">国産米を、<br>ふっくら炊いて。<br>だしと一緒に<br>どうぞ。</p>
+    </div>
+  </div>
+  <ul class="item-grid item-grid--3">{{part:menu:gohan}}
+  </ul>
+</section>
+
+<!-- ============ うどん弁当 ============ -->
+<section class="cat cat--rev" id="bento">
+  <div class="cat__head">
+    <div class="cat__img reveal"><img src="img/bento.svg" alt="うどん弁当のイラスト" loading="lazy"></div>
+    <div class="cat__card reveal">
+      <h2 class="cat__title">うどん弁当</h2>
+      <p class="cat__text">熟成の麺は、<br>時間がたっても<br>のびにくい。<br>だから、お弁当に。</p>
+    </div>
+  </div>
+  <ul class="item-grid item-grid--3">{{part:menu:bento}}
+  </ul>
+  <p class="center"><a class="btn btn--red" href="shop.html#takeout">お持ち帰りの方法を見る</a></p>
+</section>
+
+<!-- ============ 薬味 ============ -->
+<section class="sec sec--tint" id="yakumi">
+  <h2 class="sec__title"><span>薬味・</span><span>トッピング</span></h2>
+  <div class="sec__body">
+    <div class="yakumi">
+      <img class="yakumi__img reveal" src="img/yakumi.svg" alt="ねぎ、天かす、わかめ、しょうがの小皿のイラスト" loading="lazy">
+      <div class="yakumi__body reveal">
+        <p class="yakumi__lead">無料の薬味は、全9種類。<br>組み合わせは4000通り以上。</p>
+        <ul class="yakumi__list">
+          <li>青ねぎ</li><li>天かす</li><li>しょうが</li><li>白ごま</li><li>わかめ</li><li>揚げ玉</li><li>柚子こしょう</li><li>七味</li><li>だし醤油</li>
+        </ul>
+        <p class="yakumi__note">有料トッピング：温泉たまご 80円／とろろ 120円／追い肉 200円</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ご注意 ============ -->
+<section class="notes" id="notes">
+  <h2>価格・アレルギーについて</h2>
+  <ul>
+    <li>価格はすべて税込です（本サイトの価格はすべて架空です）。</li>
+    <li>店舗により、販売メニューや価格が異なる場合があります。</li>
+    <li>うどん弁当を除くうどんのお持ち帰りは、容器代として1点につき30円をいただきます。</li>
+    <li>麺には小麦を使用しています。そのほかのアレルギー情報は、店頭の一覧表でご確認ください。</li>
+  </ul>
+</section>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【実習】豊史製麺｜うどんは、寝て待て。</title>
+<meta name="description" content="豊史製麺は、生地をひと晩寝かせる熟成うどんの店。待った分だけ、うまくなる。（本サイトは講義課題として制作した架空の企業サイトです）">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Shippori+Mincho:wght@400;500;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-top">
+
+<p class="practice">本サイトは講義課題として制作したものです。<span>実在の企業・店舗・人物とは関係ありません。</span></p>
+
+<!-- ============ 共通ヘッダー（PC: 左の縦書きサイドバー / スマホ: 上部ロゴ + 下部タブ） ============ -->
+<header class="site-header" id="header">
+  <h1 class="logo">
+    <a href="./" aria-label="豊史製麺 トップへ">
+      <span class="logo__tagline">うどんは、寝て待て。</span>
+      <span class="logo__name">豊史製麺</span>
+      <span class="logo__seal" aria-hidden="true">熟成</span>
+    </a>
+  </h1>
+  <nav class="gnav" aria-label="メインメニュー">
+    <ul>
+      <li><a href="menu.html"><svg class="ic"><use href="#ic-bowl"/></svg><span>メニュー</span></a></li>
+      <li><a href="kodawari.html"><svg class="ic"><use href="#ic-craft"/></svg><span>こだわり</span></a></li>
+      <li><a href="shop.html"><svg class="ic"><use href="#ic-shop"/></svg><span>お店を探す</span></a></li>
+      <li><a href="shop.html#takeout"><svg class="ic"><use href="#ic-bag"/></svg><span>お持ち帰り</span></a></li>
+      <li><a href="company.html"><svg class="ic"><use href="#ic-company"/></svg><span>会社概要</span></a></li>
+    </ul>
+  </nav>
+  <a class="side-cta" href="company.html#contact">お問い合わせ</a>
+  <button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <ul>
+    <li><a href="./">トップ</a></li>
+    <li><a href="menu.html">メニュー</a></li>
+    <li><a href="kodawari.html">熟成うどんのこだわり</a></li>
+    <li><a href="shop.html">お店を探す・ご利用方法</a></li>
+    <li><a href="shop.html#takeout">お持ち帰り</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="company.html#recruit">採用情報</a></li>
+  </ul>
+  <a class="btn btn--red" href="company.html#contact">お問い合わせ</a>
+</div>
+
+<main>
+<!-- ============ ヒーロー ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media"><img src="img/hero.svg" alt="湯気の立つ熟成うどん"></div>
+  <div class="hero__steam" aria-hidden="true"><i></i><i></i><i></i></div>
+  <p class="hero__copy"><span>待った分だけ、</span><span>うまくなる。</span></p>
+  <a class="btn btn--white hero__cta" href="kodawari.html">詳しくはこちら</a>
+  <button class="hero__pause" type="button" aria-pressed="false">一時停止</button>
+</section>
+
+<!-- ============ 重要なお知らせ（帯） ============ -->
+<aside class="caution">
+  <h2 class="caution__title">重要なお知らせ</h2>
+  <a class="caution__link" href="#important">熟成庫の点検に伴う11月24日（火）の開店時間変更のお知らせ<svg class="chev"><use href="#ic-chev-circle"/></svg></a>
+</aside>
+
+<!-- ============ おすすめ・限定メニュー ============ -->
+<section class="sec sec--pickup" id="pickup">
+  <h2 class="sec__title"><span>おすすめ・</span><span>限定メニュー</span></h2>
+  <div class="sec__body">
+    <div class="noren" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="slider" data-slider>
+      <ul class="slider__track pickup-list">
+        <li class="pickup reveal">
+          <a href="menu.html#pickup">
+            <div class="poster"><img src="img/niku.svg" alt="" loading="lazy"><span class="poster__badge">新作</span><strong class="poster__name">肉玉<br>熟成うどん</strong><span class="poster__band">期間限定販売　<b>11月下旬</b>まで</span></div>
+            <p>ひと晩寝かせた麺に、甘辛い牛肉と月見たまご</p>
+          </a>
+        </li>
+        <li class="pickup reveal">
+          <a href="menu.html#pickup">
+            <div class="poster"><img src="img/kamo.svg" alt="" loading="lazy"><span class="poster__badge poster__badge--gold">秋冬</span><strong class="poster__name">鴨ねぎ<br>南蛮うどん</strong><span class="poster__band">期間限定販売　<b>1月中旬</b>まで</span></div>
+            <p>焼きねぎが香る、冬のごちそう</p>
+          </a>
+        </li>
+        <li class="pickup reveal">
+          <a href="menu.html#pickup">
+            <div class="poster"><img src="img/bento.svg" alt="" loading="lazy"><span class="poster__badge poster__badge--gold">持ち帰り</span><strong class="poster__name">熟成<br>うどん弁当</strong><span class="poster__band">お手頃　<b>390円</b>から</span></div>
+            <p>熟成うどんを、いつでもどこでも</p>
+          </a>
+        </li>
+        <li class="pickup reveal">
+          <a href="menu.html#pickup">
+            <div class="poster"><img src="img/curry.svg" alt="" loading="lazy"><span class="poster__badge">定番入り</span><strong class="poster__name">ふた晩<br>カレーうどん</strong><span class="poster__band">ルウも寝かせて　<b>二日目の味</b></span></div>
+            <p>麺もカレーも、寝かせるほどうまい</p>
+          </a>
+        </li>
+      </ul>
+      <button class="slider__btn slider__btn--prev" type="button" aria-label="前へ"><svg><use href="#ic-chev"/></svg></button>
+      <button class="slider__btn slider__btn--next" type="button" aria-label="次へ"><svg><use href="#ic-chev"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 定番メニュー ============ -->
+<section class="sec" id="menu">
+  <h2 class="sec__title"><span>定番メニュー</span></h2>
+  <div class="sec__body">
+    <ul class="menu-grid">
+      <li class="menu-tile menu-tile--wide reveal"><a href="menu.html#udon"><img src="img/kamaage.svg" alt="" loading="lazy"><span class="menu-tile__name">うどん</span></a></li>
+      <li class="menu-tile reveal"><a href="menu.html#bento"><img src="img/bento.svg" alt="" loading="lazy"><span class="menu-tile__name">うどん弁当</span></a></li>
+      <li class="menu-tile reveal"><a href="menu.html#tempura"><img src="img/tempura.svg" alt="" loading="lazy"><span class="menu-tile__name">天ぷら</span></a></li>
+      <li class="menu-tile reveal"><a href="menu.html#yakumi"><img src="img/yakumi.svg" alt="" loading="lazy"><span class="menu-tile__name">薬味・<br>トッピング</span></a></li>
+      <li class="menu-tile reveal"><a href="menu.html#gohan"><img src="img/gohan.svg" alt="" loading="lazy"><span class="menu-tile__name">ご飯もの</span></a></li>
+    </ul>
+    <p class="center"><a class="btn" href="menu.html">メニュー一覧へ</a></p>
+  </div>
+</section>
+
+<!-- ============ トピックス・お得な情報 ============ -->
+<section class="sec sec--tint" id="topics">
+  <h2 class="sec__title"><span>トピックス・</span><span>お得な情報</span></h2>
+  <div class="sec__body">
+    <div class="slider" data-slider>
+      <ul class="slider__track topic-list">
+        <li class="topic reveal"><a href="kodawari.html">
+          <div class="topic__img banner"><img src="img/bukkake.svg" alt="" loading="lazy"><strong>待った分だけ、<br>うまくなる。</strong><em>ぶっかけ（並）<b>380</b>円</em></div>
+          <span class="tag">トピックス</span>
+          <h3>待った分だけ、うまくなる。</h3>
+          <p>豊史製麺が大切にするのは、急がないこと。生地をひと晩寝かせて引き出した小麦の甘みを、いちばん素直に味わえる「ぶっかけ（並）」は380円。今日も、きのう仕込んだ一杯をどうぞ。</p>
+          <span class="more">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></span></a></li>
+        <li class="topic reveal"><a href="menu.html#pickup">
+          <div class="topic__img banner banner--red"><strong>寝かせ<br>感謝祭</strong><em>2026年11月開催</em></div>
+          <span class="tag">キャンペーン</span>
+          <h3>寝かせ感謝祭2026</h3>
+          <p>豊史製麺はおかげさまで、11月21日に創業8周年を迎えます。これまでの感謝を込めて、熟成時間を倍にした「ふた晩うどん」など3つの企画をご用意しました。</p>
+          <span class="more">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></span></a></li>
+        <li class="topic reveal"><a href="kodawari.html#process">
+          <div class="topic__img banner banner--navy"><strong>豊史<br>うどん夜市</strong><em>12月12日（土）湘南台にて</em></div>
+          <span class="tag">イベント</span>
+          <h3>豊史うどん夜市2026</h3>
+          <p>生地を仕込む夜の厨房を、一夜かぎりで公開します。寝かせ番による足踏み実演や、仕込みたてと熟成後の食べ比べなど、うどんがもっと好きになる特別な夜です。</p>
+          <span class="more">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></span></a></li>
+        <li class="topic reveal"><a href="menu.html">
+          <div class="topic__img banner"><img src="img/curry.svg" alt="" loading="lazy"><strong>定番に、<br>仲間入り。</strong><em>人気の限定4品</em></div>
+          <span class="tag">トピックス</span>
+          <h3>人気の期間限定商品が、定番メニューに仲間入り</h3>
+          <p>期間限定商品のうち、特にご好評をいただいた「ふた晩カレーうどん」など全4種が定番メニューになりました。</p>
+          <span class="more">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></span></a></li>
+        <li class="topic reveal"><a href="menu.html#bento">
+          <div class="topic__img banner"><img src="img/kake.svg" alt="" loading="lazy"><strong>お子さま<br>ねんねセット</strong><em>うどん・天ぷら・ジュースで<b>280</b>円</em></div>
+          <span class="tag tag--gray">豊史製麺の取り組み</span>
+          <h3>豊史お子さま ねんねセット</h3>
+          <p>やわらかめに茹でた熟成うどんに、天ぷらとジュースがついて280円。家族みんなで、ゆっくりどうぞ。</p>
+          <span class="more">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></span></a></li>
+        <li class="topic reveal"><a href="menu.html#yakumi">
+          <div class="topic__img banner"><img src="img/yakumi.svg" alt="" loading="lazy"><strong>無料の薬味が<br>9種類！</strong><em>組合せは4000通り以上</em></div>
+          <span class="tag tag--gray">豊史製麺の取り組み</span>
+          <h3>柚子こしょうと揚げ玉で、無料の薬味が9種類！</h3>
+          <p>無料の薬味とトッピングが全9種類に。その組合せで広がる楽しみ方は4000通り以上。あなただけの一杯を見つけてください。</p>
+          <span class="more">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></span></a></li>
+      </ul>
+      <button class="slider__btn slider__btn--prev" type="button" aria-label="前へ"><svg><use href="#ic-chev"/></svg></button>
+      <button class="slider__btn slider__btn--next" type="button" aria-label="次へ"><svg><use href="#ic-chev"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ こだわり（縦書きコピー + 写真） ============ -->
+<section class="concept" id="concept">
+  <div class="concept__text reveal">
+    <p class="concept__copy">生地は、ひと晩。<br>低温でじっくり寝かせて、<br>小麦の甘みを引き出します。<br>豊史製麺は、急ぎません。</p>
+    <a class="btn btn--white" href="kodawari.html">熟成うどんのこだわり</a>
+  </div>
+  <div class="concept__img reveal"><img src="img/dough.svg" alt="布をかけて寝かせているうどん生地" loading="lazy"></div>
+</section>
+
+<section class="concept concept--rev">
+  <div class="concept__text reveal">
+    <p class="concept__copy">豊史製麺は、一軒一軒に熟成庫。<br>ここでは「寝かせ番」たちが、<br>毎晩、生地の機嫌を<br>うかがっています。</p>
+    <a class="btn btn--white" href="kodawari.html#nekaseban">寝かせ番たち</a>
+  </div>
+  <div class="concept__img reveal"><img src="img/nests.svg" alt="ざるに並んだ熟成うどんの玉" loading="lazy"></div>
+</section>
+
+<!-- ============ 本日ご紹介する寝かせ番 ============ -->
+<section class="craft" id="craft">
+  <div class="craft__card reveal">
+    <div class="craft__head">
+      <p class="craft__date" id="today">令和<span class="tcy">8</span>年<br><span class="tcy">11</span>月<br><span class="tcy">13</span>日</p>
+      <h2>本日ご紹介する<br>寝かせ番</h2>
+    </div>
+    <div class="craft__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M42 34h36v16H42zM46 34c-8-14 28-22 28 0"/><circle cx="60" cy="62" r="12"/><path d="M22 112c4-22 18-32 38-32s34 10 38 32M60 80l-14 30M60 80l14 30"/></g></svg></div>
+    <div class="craft__info">
+      <p class="craft__rank"><span class="star">★</span><span id="c-rank">二つ星寝かせ番</span></p>
+      <p class="craft__name"><strong id="c-name">須田　豊史</strong><span id="c-roman">Suda Toyofumi</span></p>
+      <p class="craft__shop" id="c-shop">豊史製麺 湘南台本店</p>
+      <p class="craft__word" id="c-word">急がば、寝かせ</p>
+      <a class="more" href="kodawari.html#nekaseban">詳しく見る<svg class="chev"><use href="#ic-chev-circle"/></svg></a>
+    </div>
+  </div>
+  <div class="craft__links">
+    <a class="navy-card reveal" href="kodawari.html#nekaseban"><div><h3>寝かせ番インタビュー<svg class="chev"><use href="#ic-chev"/></svg></h3><p>寝かせ番たちの想いを綴るインタビュー記事です。</p></div><img src="img/dough.svg" alt="" loading="lazy"></a>
+    <a class="navy-card reveal" href="kodawari.html#nekaseban"><div><h3>寝かせ番名鑑<svg class="chev"><use href="#ic-chev"/></svg></h3><p>全国にいる寝かせ番を一人ひとり紹介します。</p></div><img src="img/nests.svg" alt="" loading="lazy"></a>
+  </div>
+</section>
+
+<!-- ============ サービス・店舗のご利用について ============ -->
+<section class="sec" id="service">
+  <h2 class="sec__title"><span>サービス・</span><span>店舗のご利用について</span></h2>
+  <div class="sec__body">
+    <ul class="service-grid">
+      <li class="service reveal"><a href="shop.html#service"><img src="img/svc-gift.svg" alt="" loading="lazy"><h3>豊史製麺ｅＧｉｆｔ</h3><p>SNS等で気軽に贈れるデジタルギフト券</p></a></li>
+      <li class="service reveal"><a href="shop.html#service"><img src="img/svc-app.svg" alt="" loading="lazy"><h3>お得なアプリ</h3><p>クーポンでお得に豊史製麺を利用する</p></a></li>
+      <li class="service reveal"><a href="shop.html#takeout"><img src="img/svc-takeout.svg" alt="" loading="lazy"><h3>お持ち帰り</h3><p>熟成のおいしさをどこでも</p></a></li>
+      <li class="service reveal"><a href="shop.html#stores"><img src="img/svc-shop.svg" alt="" loading="lazy"><h3>店舗検索</h3><p>お近くの豊史製麺をかんたん検索</p></a></li>
+      <li class="service reveal"><a href="shop.html#howto"><img src="img/svc-howto.svg" alt="" loading="lazy"><h3>豊史製麺の楽しみ方</h3><p>うどんの選び方、注文方法はこちら</p></a></li>
+      <li class="service reveal"><a href="shop.html#service"><img src="img/svc-pay.svg" alt="" loading="lazy"><h3>キャッシュレス決済</h3><p>豊史製麺でご利用いただける決済</p></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 動画ギャラリー ============ -->
+<section class="sec sec--tint" id="movie">
+  <h2 class="sec__title"><span>動画ギャラリー</span></h2>
+  <div class="sec__body">
+    <div class="slider" data-slider>
+      <ul class="slider__track movie-list">
+        <li class="movie reveal"><button type="button" data-movie="img/hero.svg">
+          <div class="movie__thumb"><img src="img/hero.svg" alt="" loading="lazy"><span class="movie__play" aria-hidden="true"></span></div>
+          <span class="movie__kind">CM</span><h3>「待った分だけ、うまくなる。」篇</h3>
+          <p>仕込みを終えた夜の厨房から、翌朝の一杯まで。生地が静かに熟成していく十数時間を、30秒で描きました。「うどんは、寝て待て。」という言葉とともに、できあがりを待つ時間のおいしさを伝えます。</p></button></li>
+        <li class="movie reveal"><button type="button" data-movie="img/dough.svg">
+          <div class="movie__thumb"><img src="img/dough.svg" alt="" loading="lazy"><span class="movie__play" aria-hidden="true"></span></div>
+          <span class="movie__kind">MOVIE</span><h3>「すべての店に、熟成庫がある」篇</h3>
+          <p>一軒一軒に熟成庫を構える豊史製麺。寝かせ番が毎晩温度と湿度を確かめ、生地の様子を見守る姿を追いました。</p></button></li>
+        <li class="movie reveal"><button type="button" data-movie="img/nests.svg">
+          <div class="movie__thumb"><img src="img/nests.svg" alt="" loading="lazy"><span class="movie__play" aria-hidden="true"></span></div>
+          <span class="movie__kind">MOVIE</span><h3>「待った分だけ、うまくなる。」メイキング</h3>
+          <p>CM撮影の現場の様子と、寝かせ番たちのコメントをご覧いただけます。</p></button></li>
+        <li class="movie reveal"><button type="button" data-movie="img/niku.svg">
+          <div class="movie__thumb"><img src="img/niku.svg" alt="" loading="lazy"><span class="movie__play" aria-hidden="true"></span></div>
+          <span class="movie__kind">CM</span><h3>「肉玉熟成うどん、できました。」篇（15秒）</h3>
+          <p>甘辛い牛肉と月見たまごを、ひと晩寝かせた麺にのせた新作。箸で持ち上げた瞬間のもっちりとした伸びを、食欲をそそる映像でお伝えします。</p></button></li>
+      </ul>
+      <button class="slider__btn slider__btn--prev" type="button" aria-label="前へ"><svg><use href="#ic-chev"/></svg></button>
+      <button class="slider__btn slider__btn--next" type="button" aria-label="次へ"><svg><use href="#ic-chev"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ お知らせ ============ -->
+<div class="news-wrap" id="news">
+  <section class="news news--important" id="important">
+    <header><h2>重要なお知らせ</h2><a class="more" href="#news">一覧を見る<svg class="chev"><use href="#ic-chev-circle"/></svg></a></header>
+    <ul>
+      <li><a href="#news"><time datetime="2026-11-12">2026年11月12日</time><span class="tag tag--fill">全店</span><p>熟成庫の点検に伴う11月24日（火）の開店時間変更のお知らせ</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+    </ul>
+  </section>
+  <section class="news">
+    <header><h2>お知らせ</h2><a class="more" href="#news">一覧を見る<svg class="chev"><use href="#ic-chev-circle"/></svg></a></header>
+    <ul>
+      <li><a href="#movie"><time datetime="2026-11-12">2026年11月12日</time><p>「待った分だけ、うまくなる。」新CMを2026年11月25日（水）より公開。ひと晩かけて熟成する生地の時間を描きます</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+      <li><a href="menu.html#pickup"><time datetime="2026-11-10">2026年11月10日</time><p>創業8周年「寝かせ感謝祭2026」を開催。熟成時間を倍にした『ふた晩うどん』を11月21日（土）より数量限定で販売</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+      <li><a href="kodawari.html#process"><time datetime="2026-11-05">2026年11月5日</time><p>開催まで1か月！「豊史うどん夜市2026」の全貌を公開。夜の仕込み見学や、熟成前後の食べ比べが登場</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+    </ul>
+  </section>
+  <section class="news">
+    <header><h2>店舗情報</h2><a class="more" href="shop.html#stores">一覧を見る<svg class="chev"><use href="#ic-chev-circle"/></svg></a></header>
+    <ul>
+      <li><a href="shop.html#stores"><time datetime="2026-11-10">2026年11月10日</time><p>【神奈川県】豊史製麺 日吉オープン</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+      <li><a href="shop.html#stores"><time datetime="2026-10-31">2026年10月31日</time><p>【東京都】豊史製麺 三田オープン</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+      <li><a href="shop.html#stores"><time datetime="2026-10-26">2026年10月26日</time><p>【神奈川県】豊史製麺 辻堂オープン</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+    </ul>
+  </section>
+  <section class="news">
+    <header><h2>サステナビリティ</h2><a class="more" href="company.html#sustainability">サステナビリティへ<svg class="chev"><use href="#ic-chev-circle"/></svg></a></header>
+    <ul>
+      <li><a href="company.html#sustainability"><time datetime="2026-10-21">2026年10月21日</time><span class="tag tag--fill">地域との活動</span><p>藤沢市の小学校で「うどん足踏み教室」を開催しました</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+      <li><a href="company.html#sustainability"><time datetime="2026-09-10">2026年9月10日</time><span class="tag tag--fill">地球のことを考えて</span><p>茹で湯の余熱を熟成庫の保温に再利用する取り組みを全店に拡大</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+      <li><a href="company.html#sustainability"><time datetime="2026-07-01">2026年7月1日</time><span class="tag tag--fill">地球のことを考えて</span><p>麺の切れ端を「うどんかりんとう」に。食品ロス削減の取り組みを開始</p><svg class="chev"><use href="#ic-chev"/></svg></a></li>
+    </ul>
+  </section>
+
+  <section class="recruit reveal">
+    <h2>正社員・アルバイト採用情報</h2>
+    <div class="recruit__btns">
+      <a class="btn btn--white" href="company.html#recruit">正社員採用<svg class="ext"><use href="#ic-ext"/></svg></a>
+      <a class="btn btn--white" href="company.html#recruit">アルバイト採用<svg class="ext"><use href="#ic-ext"/></svg></a>
+    </div>
+  </section>
+</div>
+
+<!-- 動画モーダル -->
+<dialog class="modal" id="modal">
+  <div class="modal__stage"><img id="modal-img" src="" alt=""><div class="hero__steam" aria-hidden="true"><i></i><i></i><i></i></div><p>待った分だけ、<br>うまくなる。</p></div>
+  <p class="modal__note">※ 架空のサイトのため、動画の代わりにイメージ映像を再生しています。</p>
+  <button class="modal__close" type="button" aria-label="閉じる">×</button>
+</dialog>
+
+
+<!-- ============ 共通 CTA ============ -->
+<section class="cta-band">
+  <p class="cta-band__copy">今日の一杯を、<br>探しに行こう。</p>
+  <div class="cta-band__btns">
+    <a class="btn btn--red" href="shop.html#stores">お近くのお店を探す</a>
+    <a class="btn btn--white" href="shop.html#takeout">お持ち帰りのご案内</a>
+  </div>
+</section>
+</main>
+
+<nav class="breadcrumb" aria-label="パンくずリスト"><span>トップ</span></nav>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="logo logo--footer">
+      <span class="logo__tagline">うどんは、寝て待て。</span>
+      <span class="logo__name">豊史製麺</span>
+      <span class="logo__seal" aria-hidden="true">熟成</span>
+    </div>
+    <div class="footer__nav">
+      <ul class="footer__links">
+        <li><a href="menu.html">メニュー</a></li><li><a href="kodawari.html">こだわり</a></li>
+        <li><a href="shop.html">お店を探す</a></li><li><a href="shop.html#takeout">お持ち帰り</a></li>
+        <li><a href="company.html">会社概要</a></li><li><a href="company.html#recruit">採用情報</a></li>
+      </ul>
+      <ul class="footer__links footer__links--sub">
+        <li><a href="shop.html#howto">ご注文の流れ</a></li><li><a href="menu.html#notes">価格・アレルギーについて</a></li><li><a href="company.html#sustainability">サステナビリティ</a></li><li><a href="company.html#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <p class="footer__copy">© 2026 Toyofumi Seimen.<br>本サイトは講義課題として制作したものです。会社・店舗・人物・価格はすべて架空です。イラスト・図・アイコンはすべて自作です。</p>
+    <ul class="footer__sns" aria-label="SNS（課題用のためリンクはありません）">
+      <li><span aria-label="動画チャンネル"><svg><use href="#ic-play"/></svg></span></li>
+      <li><span aria-label="写真"><svg><use href="#ic-camera"/></svg></span></li>
+      <li><a href="company.html#contact" aria-label="メールでお問い合わせ"><svg><use href="#ic-mail"/></svg></a></li>
+    </ul>
+  </div>
+  <div class="footer__corp">
+    <span class="footer__corp-name">TOYOFUMI →</span>
+    <ul><li><a href="company.html">会社概要</a></li><li><a href="company.html#recruit">採用情報</a></li><li><a href="company.html#contact">お問い合わせ</a></li></ul>
+  </div>
+</footer>
+
+<!-- アイコン（すべて自作の線画） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ic-bowl" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="14" cy="11" rx="10" ry="6"/><path d="M4 11v3c0 4 4.5 8 10 8s10-4 10-8v-3M9 10c2-2 4 2 6 0s3 1 4 0M10 13c2-1 5 1 8 0"/></g></symbol>
+    <symbol id="ic-craft" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h10v5H9zM10 9v3a4 4 0 0 0 8 0V9M4 25c1-5 5-8 10-8s9 3 10 8M14 17l-4 7M14 17l4 7"/></g></symbol>
+    <symbol id="ic-shop" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h22M5 6v17h18V6M9 6v7M14 6v9M19 6v7M10 23v-5h8v5"/></g></symbol>
+    <symbol id="ic-bag" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h16l1 14H5zM10 10V8a4 4 0 0 1 8 0v2"/></g></symbol>
+    <symbol id="ic-company" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24h20M6 24V9l8-5 8 5v15M11 24v-6h6v6M10 12h2M16 12h2"/></g></symbol>
+    <symbol id="ic-person" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M42 34h36v16H42zM46 34c-8-14 28-22 28 0"/><circle cx="60" cy="62" r="12"/><path d="M22 112c4-22 18-32 38-32s34 10 38 32M60 80l-14 30M60 80l14 30"/></g></symbol>
+    <symbol id="ic-chev" viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-chev-circle" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8.5"/><path d="M8.5 6.5L12 10l-3.5 3.5"/></g></symbol>
+    <symbol id="ic-ext" viewBox="0 0 16 16"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-play" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="M10 9l5 3-5 3z" fill="#44413c"/></symbol>
+    <symbol id="ic-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+  </defs>
+</svg>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

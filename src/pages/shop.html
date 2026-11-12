@@ -1,0 +1,72 @@
+<!--meta {"title":"【実習】お店を探す・ご利用方法｜豊史製麺","desc":"豊史製麺の店舗一覧、ご注文の流れ、お持ち帰り、アプリやキャッシュレス決済のご案内。","nav":"shop","crumb":"お店を探す・ご利用方法"} -->
+<section class="page-hero">
+  <img class="page-hero__img" src="img/storefront.svg" alt="">
+  <h1 class="page-hero__title">お店を探す<small>店舗・ご利用方法</small></h1>
+</section>
+
+<p class="page-lead reveal">湘南台から、三田まで。<br>神奈川と東京に、<br>八軒の熟成庫があります。</p>
+
+<nav class="anchor-nav" aria-label="このページの内容">
+  <a href="#stores">店舗一覧</a><a href="#howto">ご注文の流れ</a><a href="#takeout">お持ち帰り</a><a href="#service">サービス</a>
+</nav>
+
+<!-- ============ 店舗一覧 ============ -->
+<section class="sec" id="stores">
+  <h2 class="sec__title"><span>店舗一覧</span></h2>
+  <div class="sec__body">
+    <div class="stores">
+      <figure class="stores__map reveal"><img src="img/map.svg" alt="店舗の位置関係のイメージ図。湘南台本店・藤沢・辻堂・矢上・日吉・横浜西口・三田・信濃町" loading="lazy"><figcaption>店舗の位置関係（イメージ図）</figcaption></figure>
+      <div>
+        <div class="filter" role="group" aria-label="エリアで絞り込む">
+          <button type="button" class="is-on" data-filter="all" aria-pressed="true">すべて<small>8</small></button>
+          <button type="button" data-filter="kanagawa" aria-pressed="false">神奈川<small>6</small></button>
+          <button type="button" data-filter="tokyo" aria-pressed="false">東京<small>2</small></button>
+        </div>
+        <ul class="shop-list">{{part:shops}}
+        </ul>
+        <p class="size-note">住所はすべて架空のものです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ご注文の流れ ============ -->
+<section class="sec sec--tint" id="howto">
+  <h2 class="sec__title"><span>ご注文の</span><span>流れ</span></h2>
+  <div class="sec__body">
+    <ol class="steps">
+      <li class="reveal"><span class="steps__num">一</span><img src="img/kake.svg" alt="" loading="lazy"><h3>うどんを選ぶ</h3><p>入口でうどんの種類とサイズを伝えます。麺のかたさも選べます。</p></li>
+      <li class="reveal"><span class="steps__num">二</span><img src="img/tempura.svg" alt="" loading="lazy"><h3>天ぷらをとる</h3><p>揚げたての天ぷらやおむすびを、トレーにお好きなだけ。</p></li>
+      <li class="reveal"><span class="steps__num">三</span><img src="img/svc-pay.svg" alt="" loading="lazy"><h3>お会計</h3><p>現金のほか、カード・交通系IC・QRコード決済が使えます。</p></li>
+      <li class="reveal"><span class="steps__num">四</span><img src="img/yakumi.svg" alt="" loading="lazy"><h3>薬味でしあげる</h3><p>無料の薬味9種類で、自分だけの一杯に。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ お持ち帰り ============ -->
+<section class="takeout" id="takeout">
+  <div class="takeout__img reveal"><img src="img/bento.svg" alt="うどん弁当のイラスト" loading="lazy"></div>
+  <div class="takeout__body reveal">
+    <h2>お持ち帰り</h2>
+    <p>熟成の麺は、時間がたってものびにくいのが自慢です。ご自宅でも、職場でも、できたてに近いおいしさを。</p>
+    <ol class="takeout__steps">
+      <li><b>アプリで予約</b>受け取り時間を15分単位で指定できます。</li>
+      <li><b>店頭で受け取り</b>専用カウンターで、お名前をお伝えください。</li>
+      <li><b>2時間以内に</b>お早めにお召し上がりください。</li>
+    </ol>
+    <p class="takeout__price">うどん弁当 <b>390</b>円から</p>
+    <div class="takeout__btns"><a class="btn btn--red" href="menu.html#bento">弁当メニューを見る</a><a class="btn" href="#stores">受け取れるお店を探す</a></div>
+  </div>
+</section>
+
+<!-- ============ サービス ============ -->
+<section class="sec" id="service">
+  <h2 class="sec__title"><span>サービス</span></h2>
+  <div class="sec__body">
+    <ul class="service-grid">
+      <li class="service reveal"><div class="service__in"><img src="img/svc-app.svg" alt="" loading="lazy"><h3>豊史製麺アプリ</h3><p>来店ごとにスタンプがたまり、10個でうどん1杯無料。お持ち帰りの予約もこちらから。</p></div></li>
+      <li class="service reveal"><div class="service__in"><img src="img/svc-gift.svg" alt="" loading="lazy"><h3>デジタルギフト</h3><p>500円分から、メッセージを添えてSNSで贈れます。</p></div></li>
+      <li class="service reveal"><div class="service__in"><img src="img/svc-pay.svg" alt="" loading="lazy"><h3>キャッシュレス決済</h3><p>クレジットカード、交通系IC、QRコード決済に全店で対応しています。</p></div></li>
+    </ul>
+  </div>
+</section>

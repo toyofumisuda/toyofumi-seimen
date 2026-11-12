@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【実習】こだわり｜豊史製麺</title>
+<meta name="description" content="豊史製麺の熟成うどんができるまで。仕込みから茹でるまでの17時間と、それを支える寝かせ番たちをご紹介します。（本サイトは講義課題として制作した架空の企業サイトです）">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Shippori+Mincho:wght@400;500;700&family=Yuji+Syuku&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-kodawari">
+
+<p class="practice">本サイトは講義課題として制作したものです。<span>実在の企業・店舗・人物とは関係ありません。</span></p>
+
+<!-- ============ 共通ヘッダー（PC: 左の縦書きサイドバー / スマホ: 上部ロゴ + 下部タブ） ============ -->
+<header class="site-header" id="header">
+  <div class="logo">
+    <a href="./" aria-label="豊史製麺 トップへ">
+      <span class="logo__tagline">うどんは、寝て待て。</span>
+      <span class="logo__name">豊史製麺</span>
+      <span class="logo__seal" aria-hidden="true">熟成</span>
+    </a>
+  </div>
+  <nav class="gnav" aria-label="メインメニュー">
+    <ul>
+      <li><a href="menu.html"><svg class="ic"><use href="#ic-bowl"/></svg><span>メニュー</span></a></li>
+      <li><a href="kodawari.html" aria-current="page"><svg class="ic"><use href="#ic-craft"/></svg><span>こだわり</span></a></li>
+      <li><a href="shop.html"><svg class="ic"><use href="#ic-shop"/></svg><span>お店を探す</span></a></li>
+      <li><a href="shop.html#takeout"><svg class="ic"><use href="#ic-bag"/></svg><span>お持ち帰り</span></a></li>
+      <li><a href="company.html"><svg class="ic"><use href="#ic-company"/></svg><span>会社概要</span></a></li>
+    </ul>
+  </nav>
+  <a class="side-cta" href="company.html#contact">お問い合わせ</a>
+  <button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <ul>
+    <li><a href="./">トップ</a></li>
+    <li><a href="menu.html">メニュー</a></li>
+    <li><a href="kodawari.html">熟成うどんのこだわり</a></li>
+    <li><a href="shop.html">お店を探す・ご利用方法</a></li>
+    <li><a href="shop.html#takeout">お持ち帰り</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="company.html#recruit">採用情報</a></li>
+  </ul>
+  <a class="btn btn--red" href="company.html#contact">お問い合わせ</a>
+</div>
+
+<main>
+<section class="page-hero">
+  <img class="page-hero__img" src="img/dough.svg" alt="">
+  <h1 class="page-hero__title">こだわり<small>熟成うどんができるまで</small></h1>
+</section>
+
+<p class="page-lead reveal">うどんは、急ぐと<br>かたくなります。<br>豊史製麺は、待つことを<br>いちばんの仕事にしました。</p>
+
+<!-- ============ 数字で見る ============ -->
+<section class="stats">
+  <ul>
+    <li class="reveal"><b data-count="13">13</b><small>時間</small><span>熟成庫で寝かせる時間</span></li>
+    <li class="reveal"><b data-count="12">12</b><small>℃</small><span>熟成庫の温度</span></li>
+    <li class="reveal"><b data-count="3">3</b><small>つ</small><span>材料は、小麦と塩と水だけ</span></li>
+    <li class="reveal"><b data-count="8">8</b><small>店</small><span>すべての店に熟成庫</span></li>
+  </ul>
+</section>
+
+<!-- ============ 工程（自作の図） ============ -->
+<section class="sec sec--tint" id="process">
+  <h2 class="sec__title"><span>一杯が</span><span>できるまで</span></h2>
+  <div class="sec__body">
+    <p class="sec__lead">前の日の夕方に仕込んだ生地が、翌日のお昼にうどんになります。<br>そのあいだの17時間を、図にしました。</p>
+    <figure class="timeline reveal">
+      <svg viewBox="0 0 1000 300" role="img" aria-labelledby="tl-title">
+        <title id="tl-title">熟成うどんの工程図。18時に仕込み、19時に足踏み、20時から翌9時まで13時間熟成し、10時に切り出し、11時に茹でて提供。</title>
+        <defs>
+          <linearGradient id="tl-night" x1="0" x2="1"><stop offset="0" stop-color="#e9b86b"/><stop offset=".18" stop-color="#3d4664"/><stop offset=".78" stop-color="#3d4664"/><stop offset="1" stop-color="#f4d58d"/></linearGradient>
+        </defs>
+        <rect x="40" y="128" width="920" height="44" rx="22" fill="url(#tl-night)"/>
+        <g fill="#fbf7ef" opacity=".85"><circle cx="330" cy="142" r="2"/><circle cx="420" cy="156" r="1.6"/><circle cx="510" cy="140" r="2.2"/><circle cx="600" cy="158" r="1.6"/><circle cx="690" cy="144" r="2"/></g>
+        <path d="M455 138a14 14 0 1 0 14 22a11 11 0 1 1 -14 -22z" fill="#f4d58d"/>
+        <text x="500" y="200" text-anchor="middle" font-size="15" fill="#3d4664">熟成庫で13時間（12℃・湿度80%）</text>
+        <g font-size="14" fill="#44413c" text-anchor="middle">
+          <g><circle cx="80" cy="150" r="30" fill="#fff" stroke="#c81432" stroke-width="3"/><text x="80" y="156" font-size="15" fill="#c81432" font-weight="700">18:00</text><text x="80" y="80" font-size="18" font-weight="700" fill="#1a1816">仕込み</text><text x="80" y="104">小麦・塩・水を練る</text></g>
+          <g><circle cx="230" cy="150" r="30" fill="#fff" stroke="#c81432" stroke-width="3"/><text x="230" y="156" font-size="15" fill="#c81432" font-weight="700">19:00</text><text x="230" y="80" font-size="18" font-weight="700" fill="#1a1816">足踏み</text><text x="230" y="104">体重をかけてコシを出す</text></g>
+          <g><circle cx="770" cy="150" r="30" fill="#fff" stroke="#c81432" stroke-width="3"/><text x="770" y="156" font-size="15" fill="#c81432" font-weight="700">10:00</text><text x="770" y="80" font-size="18" font-weight="700" fill="#1a1816">切り出し</text><text x="770" y="104">3.2mmの太さに切る</text></g>
+          <g><circle cx="920" cy="150" r="30" fill="#c81432"/><text x="920" y="156" font-size="15" fill="#fff" font-weight="700">11:00</text><text x="920" y="80" font-size="18" font-weight="700" fill="#1a1816">茹でて提供</text><text x="920" y="104">茹でたてを一杯ずつ</text></g>
+        </g>
+        <g font-size="13" fill="#8d877c" text-anchor="middle"><text x="155" y="240">前日の夕方</text><text x="500" y="240">夜のあいだ、寝かせ番が2時間ごとに見回る</text><text x="845" y="240">翌日のお昼</text></g>
+        <path d="M80 222 V214 H230 V222 M330 222 V214 H670 V222 M770 222 V214 H920 V222" fill="none" stroke="#c9bfa8" stroke-width="1.5"/>
+      </svg>
+      <figcaption>図：熟成うどんの工程（豊史製麺オリジナルの図）</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 3つのこだわり ============ -->
+<section class="concept">
+  <div class="concept__text reveal">
+    <p class="concept__num">壱</p>
+    <p class="concept__copy">小麦は、二種類。<br>香りの強い粉と、<br>弾力の出る粉を、<br>季節ごとに配合します。</p>
+  </div>
+  <div class="concept__img reveal"><img src="img/dough.svg" alt="布をかけて寝かせているうどん生地のイラスト" loading="lazy"></div>
+</section>
+<section class="concept concept--rev">
+  <div class="concept__text reveal">
+    <p class="concept__num">弐</p>
+    <p class="concept__copy">一軒一軒に、熟成庫。<br>温度は十二度、<br>湿度は八割。<br>生地がいちばん眠れる部屋です。</p>
+  </div>
+  <div class="concept__img reveal"><img src="img/nests.svg" alt="ざるに並んだ熟成うどんの玉のイラスト" loading="lazy"></div>
+</section>
+<section class="concept">
+  <div class="concept__text reveal">
+    <p class="concept__num">参</p>
+    <p class="concept__copy">茹でるのは、注文のたび。<br>寝かせた時間を、<br>最後の一分で<br>台無しにしないために。</p>
+  </div>
+  <div class="concept__img reveal"><img src="img/kamaage.svg" alt="釜揚げうどんのイラスト" loading="lazy"></div>
+</section>
+
+<!-- ============ 寝かせ番 ============ -->
+<section class="sec sec--tint" id="nekaseban">
+  <h2 class="sec__title"><span>寝かせ番</span><span>たち</span></h2>
+  <div class="sec__body">
+    <p class="sec__lead">「寝かせ番」は、熟成庫を任された職人の呼び名です。<br>社内の検定で、一つ星から三つ星までの段位があります。</p>
+    <ul class="person-grid">
+      <li class="person reveal">
+        <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#ic-person"/></svg></div>
+        <p class="person__rank"><span class="star">★★★</span>三つ星寝かせ番</p>
+        <h3 class="person__name">粉川　千代</h3>
+        <p class="person__shop">豊史製麺 辻堂</p>
+        <p class="person__word">「待つのも、仕事」</p>
+        <p class="person__desc">熟成庫の温度を0.5℃単位で見てきた、最古参。</p>
+      </li>
+      <li class="person reveal">
+        <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#ic-person"/></svg></div>
+        <p class="person__rank"><span class="star">★★</span>二つ星寝かせ番</p>
+        <h3 class="person__name">須田　豊史</h3>
+        <p class="person__shop">豊史製麺 湘南台本店</p>
+        <p class="person__word">「急がば、寝かせ」</p>
+        <p class="person__desc">創業者。毎晩いちばん最後に熟成庫の扉を閉める。</p>
+      </li>
+      <li class="person reveal">
+        <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#ic-person"/></svg></div>
+        <p class="person__rank"><span class="star">★★</span>二つ星寝かせ番</p>
+        <h3 class="person__name">出汁本　薫</h3>
+        <p class="person__shop">豊史製麺 矢上</p>
+        <p class="person__word">「いつでも、もっちり」</p>
+        <p class="person__desc">だしの担当も兼ねる、二刀流。</p>
+      </li>
+      <li class="person reveal">
+        <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#ic-person"/></svg></div>
+        <p class="person__rank"><span class="star">★</span>一つ星寝かせ番</p>
+        <h3 class="person__name">麦野　こはる</h3>
+        <p class="person__shop">豊史製麺 日吉</p>
+        <p class="person__word">「生地の声をきく」</p>
+        <p class="person__desc">手のひらで生地の張りを確かめる名人。</p>
+      </li>
+      <li class="person reveal">
+        <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#ic-person"/></svg></div>
+        <p class="person__rank"><span class="star">★</span>一つ星寝かせ番</p>
+        <h3 class="person__name">塩見　航</h3>
+        <p class="person__shop">豊史製麺 三田</p>
+        <p class="person__word">「昨日の自分に、今日勝つ」</p>
+        <p class="person__desc">塩水の濃さを、季節ごとに書き留める。</p>
+      </li>
+      <li class="person reveal">
+        <div class="person__avatar" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#ic-person"/></svg></div>
+        <p class="person__rank"><span class="star">★</span>一つ星寝かせ番</p>
+        <h3 class="person__name">湯浅　大地</h3>
+        <p class="person__shop">豊史製麺 藤沢</p>
+        <p class="person__word">「ひと晩を、裏切らない」</p>
+        <p class="person__desc">茹で時間の秒数に、いちばんうるさい。</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ 共通 CTA ============ -->
+<section class="cta-band">
+  <p class="cta-band__copy">今日の一杯を、<br>探しに行こう。</p>
+  <div class="cta-band__btns">
+    <a class="btn btn--red" href="shop.html#stores">お近くのお店を探す</a>
+    <a class="btn btn--white" href="shop.html#takeout">お持ち帰りのご案内</a>
+  </div>
+</section>
+</main>
+
+<nav class="breadcrumb" aria-label="パンくずリスト"><a href="./">トップ</a><span aria-hidden="true">／</span><span aria-current="page">こだわり</span></nav>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="footer__main">
+    <div class="logo logo--footer">
+      <span class="logo__tagline">うどんは、寝て待て。</span>
+      <span class="logo__name">豊史製麺</span>
+      <span class="logo__seal" aria-hidden="true">熟成</span>
+    </div>
+    <div class="footer__nav">
+      <ul class="footer__links">
+        <li><a href="menu.html">メニュー</a></li><li><a href="kodawari.html">こだわり</a></li>
+        <li><a href="shop.html">お店を探す</a></li><li><a href="shop.html#takeout">お持ち帰り</a></li>
+        <li><a href="company.html">会社概要</a></li><li><a href="company.html#recruit">採用情報</a></li>
+      </ul>
+      <ul class="footer__links footer__links--sub">
+        <li><a href="shop.html#howto">ご注文の流れ</a></li><li><a href="menu.html#notes">価格・アレルギーについて</a></li><li><a href="company.html#sustainability">サステナビリティ</a></li><li><a href="company.html#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <p class="footer__copy">© 2026 Toyofumi Seimen.<br>本サイトは講義課題として制作したものです。会社・店舗・人物・価格はすべて架空です。イラスト・図・アイコンはすべて自作です。</p>
+    <ul class="footer__sns" aria-label="SNS（課題用のためリンクはありません）">
+      <li><span aria-label="動画チャンネル"><svg><use href="#ic-play"/></svg></span></li>
+      <li><span aria-label="写真"><svg><use href="#ic-camera"/></svg></span></li>
+      <li><a href="company.html#contact" aria-label="メールでお問い合わせ"><svg><use href="#ic-mail"/></svg></a></li>
+    </ul>
+  </div>
+  <div class="footer__corp">
+    <span class="footer__corp-name">TOYOFUMI →</span>
+    <ul><li><a href="company.html">会社概要</a></li><li><a href="company.html#recruit">採用情報</a></li><li><a href="company.html#contact">お問い合わせ</a></li></ul>
+  </div>
+</footer>
+
+<!-- アイコン（すべて自作の線画） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ic-bowl" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="14" cy="11" rx="10" ry="6"/><path d="M4 11v3c0 4 4.5 8 10 8s10-4 10-8v-3M9 10c2-2 4 2 6 0s3 1 4 0M10 13c2-1 5 1 8 0"/></g></symbol>
+    <symbol id="ic-craft" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h10v5H9zM10 9v3a4 4 0 0 0 8 0V9M4 25c1-5 5-8 10-8s9 3 10 8M14 17l-4 7M14 17l4 7"/></g></symbol>
+    <symbol id="ic-shop" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h22M5 6v17h18V6M9 6v7M14 6v9M19 6v7M10 23v-5h8v5"/></g></symbol>
+    <symbol id="ic-bag" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h16l1 14H5zM10 10V8a4 4 0 0 1 8 0v2"/></g></symbol>
+    <symbol id="ic-company" viewBox="0 0 28 28"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24h20M6 24V9l8-5 8 5v15M11 24v-6h6v6M10 12h2M16 12h2"/></g></symbol>
+    <symbol id="ic-person" viewBox="0 0 120 120"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M42 34h36v16H42zM46 34c-8-14 28-22 28 0"/><circle cx="60" cy="62" r="12"/><path d="M22 112c4-22 18-32 38-32s34 10 38 32M60 80l-14 30M60 80l14 30"/></g></symbol>
+    <symbol id="ic-chev" viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-chev-circle" viewBox="0 0 20 20"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8.5"/><path d="M8.5 6.5L12 10l-3.5 3.5"/></g></symbol>
+    <symbol id="ic-ext" viewBox="0 0 16 16"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="ic-play" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="M10 9l5 3-5 3z" fill="#44413c"/></symbol>
+    <symbol id="ic-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="ic-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+  </defs>
+</svg>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
