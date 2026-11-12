@@ -291,7 +291,7 @@ a:hover .poster img, a:hover .banner img, .menu-tile a:hover img, .movie button:
   .burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .drawer { display: block; position: fixed; inset: 60px 0 var(--tab-h); z-index: 40; background: var(--bg); padding: 28px 32px; overflow: auto; }
-  .drawer .btn { width: 100%; margin-top: 28px; }
+  .drawer .btn { display: flex; width: 100%; margin-top: 28px; padding: 15px 28px; border-bottom: 0; }
   .gnav a[aria-current="page"] { color: var(--red); }
   .drawer[hidden] { display: none; }
   .drawer a { display: block; padding: 18px 4px; border-bottom: 1px solid var(--line); font-family: var(--display); font-weight: 700; letter-spacing: .1em; }
